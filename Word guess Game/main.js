@@ -1,1 +1,0 @@
-const inputs = document.querySelector("inputs")
