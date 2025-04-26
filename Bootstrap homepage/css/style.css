@@ -10,3 +10,6 @@ body::before {
     }
 }
 
+iframe{
+    border-radius: 10px;
+}
