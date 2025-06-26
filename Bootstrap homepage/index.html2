@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>ALTERNATE – Actiepagina</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+<body class="bg-white">
+
+  <!-- Bovenste infobalk -->
+  <div class="bg-light small py-1">
+    <div class="container text-center">
+      Nu&nbsp;20% EXTRA kassakorting op Tweedehands artikelen
+    </div>
+  </div>
+
+  <!-- Logo + navigatie -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <span class="navbar-brand fw-bold text-danger fs-3">ALTERNATE</span>
+
+      <!-- hamburger  -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="mainNav" class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#">Tweedehands</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Acties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">PC-Builder</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dagaanbieding</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Laptopkiezer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dagdeal-banner -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row align-items-center text-center text-lg-start g-4">
+        <div class="col-lg-6">
+          <h5 class="fw-bold mb-1">Alleen vandaag geldig!</h5>
+          <h6 class="mb-1">ASUS&nbsp;ROG&nbsp;Strix&nbsp;XG27ACS 27" gaming monitor</h6>
+          <p class="mb-2 small">
+            2560 × 1440&nbsp;–&nbsp;180 Hz&nbsp;–&nbsp;1 ms&nbsp;respons
+          </p>
+          <p class="fs-5 fw-bold mb-3">€ 299,-</p>
+          <a class="btn btn-dark btn-sm" href="#">Bekijk hier de deal!</a>
+        </div>
+        <div class="col-lg-6">
+          <!-- Vervang door jouw monitor-afbeelding -->
+          <img src="img/monitor.jpg" class="img-fluid" alt="Gaming-monitor">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals-rij -->
+  <section class="container my-4">
+    <h5 class="text-center mb-3">Deals</h5>
+
+    <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
+      <div class="col">
+        <img src="img/keyboard.jpg" class="img-fluid border" alt="Toetsenbord">
+        <p class="small mt-2">Bekijk hier alle toetsenborden!</p>
+      </div>
+
+      <div class="col">
+        <img src="img/gpu.jpg" class="img-fluid border" alt="Videokaart">
+        <p class="small mt-2">Bekijk hier alle grafische kaarten!</p>
+      </div>
+
+      <div class="col">
+        <img src="img/lionking.jpg" class="img-fluid border" alt="LEGO Simba">
+        <p class="small mt-2">Bekijk hier alle LEGO van Lion King!</p>
+      </div>
+
+      <div class="col">
+        <img src="img/stitch.jpg" class="img-fluid border" alt="LEGO Stitch">
+        <p class="small mt-2">Bekijk hier alle LEGO van Stitch!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-of-Duty promo -->
+  <section class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <h4 class="fw-bold mb-1">CALL&nbsp;OF&nbsp;DUTY&nbsp;MW III&nbsp;|&nbsp;WARZONE</h4>
+      <p class="mb-1">NVIDIA&nbsp;Reflex&nbsp;Clash</p>
+      <p class="mb-1">Support&nbsp;jouw&nbsp;team&nbsp;&amp;&nbsp;win&nbsp;geweldige&nbsp;prijzen!</p>
+      <p class="small mb-0">12-06-24&nbsp;–&nbsp;03-07-24</p>
+    </div>
+  </section>
+
+  <!-- Informatieve blokken -->
+  <section class="container my-4">
+    <div class="row text-center gy-4">
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">
+          <span class="text-danger">%</span> DE BESTE TWEEDEKANS DEALS
+        </h5>
+        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
+        <p class="small">
+          Ontdek onze tweedehands producten met hoge kortingen!
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">ONTDEK DE GAMING OUTLET</h5>
+        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
+        <p class="small">
+          Scoor nu tot 50 % korting op ons assortiment in de outlet.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h5 class="fw-bold">
+          <span class="text-danger">%</span> RECENT TOEGEVOEGDE TWEEDEKANS PRODUCTEN
+        </h5>
+        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
+        <p class="small">
+          Bekijk hier onze recent toegevoegde tweedehands producten.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS (bundel incl. Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
