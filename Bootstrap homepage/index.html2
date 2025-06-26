@@ -1,246 +1,261 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <title>ALTERNATE – Actiepagina</title>
-
-  <!-- Bootstrap 5 -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
-</head>
-<body class="bg-white">
-
-  <!-- Bovenste infobalk -->
-  <div class="bg-light small py-1">
-    <div class="container text-center">
-      Nu&nbsp;20% EXTRA kassakorting op Tweedehands artikelen
-    </div>
+<div class="bg-light text-center py-1">
+    <small>Nu 20% EXTRA kassakorting op Tweedekans artikelen</small>
   </div>
 
-  <!-- Logo + navigatie -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <span class="navbar-brand fw-bold text-danger fs-3">ALTERNATE</span>
 
-      <!-- hamburger  -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-      >
+  
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Alternate logo" class="img-fluid">
+      </a>
+     
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="mainNav" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="#">Tweedehands</a></li>
+     
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Tweedekans</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Acties</a></li>
           <li class="nav-item"><a class="nav-link" href="#">PC-Builder</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Dagaanbieding</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Laptopkiezer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Laptops</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
-  <!-- Dagdeal-banner -->
-  <section class="py-4 bg-light">
+  <!-- Promotie sectie -->
+  <section class="bg-danger bg-opacity-10 py-4">
     <div class="container">
-      <div class="row align-items-center text-center text-lg-start g-4">
-        <div class="col-lg-6">
-          <h5 class="fw-bold mb-1">Alleen vandaag geldig!</h5>
-          <h6 class="mb-1">ASUS&nbsp;ROG&nbsp;Strix&nbsp;XG27ACS 27" gaming monitor</h6>
-          <p class="mb-2 small">
-            2560 × 1440&nbsp;–&nbsp;180 Hz&nbsp;–&nbsp;1 ms&nbsp;respons
+      <div class="row align-items-center g-4">
+
+       
+        <div class="col-md-8">
+          <h2 class="h4">Alleen vandaag geldig!
+            ASUS ROG Strix XG27AQCS 27" gaming monitor
+          </h2>
+          <p class="mb-2">
+            <br>
           </p>
-          <p class="fs-5 fw-bold mb-3">€ 299,-</p>
-          <a class="btn btn-dark btn-sm" href="#">Bekijk hier de deal!</a>
+          <h6>
+            De ASUS ROG Strix XG27ACS is een gaming monitor met een resolutie van 2560 x 1440, een refresh rate van 180 HZ en een responstijd van 1ms
+          </h6>
+          <h4 class="fw-bold">€299,-</h4>
+          <a href="#" class="btn btn-dark">Bekijk hier de deal!</a>
         </div>
-        <div class="col-lg-6">
-          <!-- Vervang door jouw monitor-afbeelding -->
-          <img src="img/monitor.jpg" class="img-fluid" alt="Gaming-monitor">
+
+        
+        <div class="col-md-4">
+          <img src="img/monitor.webp" class="img-fluid" alt="Gaming monitor">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="py-5">
+    <div class="container">
+      <h2 class="h4 mb-4">Deals</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Corsair-keyboard.webp" class="card-img-top" alt="Toetsenbord">
+            <div class="card-body">
+              <p class="card-text">Bekijk hier alle toetsenborden!</p>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/RTX-4090.webp" class="card-img-top" alt="Videokaart">
+            <div class="card-body">
+              <p class="card-text">Bekijk hier alle grafische kaarten!</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/LEGO-Simba.webp" class="card-img-top" alt="LEGO Lion King">
+            <div class="card-body">
+              <p class="card-text">Bekijk hier alle LEGO van Lion King!</p>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/LEGO-Stitch.jpg" class="card-img-top" alt="LEGO Stitch">
+            <div class="card-body">
+              <p class="card-text">Bekijk hier alle LEGO van Stitch!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Deals-rij -->
-  <section class="container my-4">
-    <h5 class="text-center mb-3">Deals</h5>
-
-    <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
-      <div class="col">
-        <img src="img/keyboard.jpg" class="img-fluid border" alt="Toetsenbord">
-        <p class="small mt-2">Bekijk hier alle toetsenborden!</p>
-      </div>
-
-      <div class="col">
-        <img src="img/gpu.jpg" class="img-fluid border" alt="Videokaart">
-        <p class="small mt-2">Bekijk hier alle grafische kaarten!</p>
-      </div>
-
-      <div class="col">
-        <img src="img/lionking.jpg" class="img-fluid border" alt="LEGO Simba">
-        <p class="small mt-2">Bekijk hier alle LEGO van Lion King!</p>
-      </div>
-
-      <div class="col">
-        <img src="img/stitch.jpg" class="img-fluid border" alt="LEGO Stitch">
-        <p class="small mt-2">Bekijk hier alle LEGO van Stitch!</p>
-      </div>
+  
+<div class="container my-4">
+     <div class="row g-4">
+    <div class=" h-100 p-4 rounded">
+        <img src="img/banner.webp" alt="Call of Duty banner">
+      
     </div>
-  </section>
+  </div>
 
-  <!-- Call-of-Duty promo -->
-  <section class="bg-dark text-white py-4">
-    <div class="container text-center">
-      <h4 class="fw-bold mb-1">CALL&nbsp;OF&nbsp;DUTY&nbsp;MW III&nbsp;|&nbsp;WARZONE</h4>
-      <p class="mb-1">NVIDIA&nbsp;Reflex&nbsp;Clash</p>
-      <p class="mb-1">Support&nbsp;jouw&nbsp;team&nbsp;&amp;&nbsp;win&nbsp;geweldige&nbsp;prijzen!</p>
-      <p class="small mb-0">12-06-24&nbsp;–&nbsp;03-07-24</p>
-    </div>
-  </section>
-
-  <!-- Informatieve blokken -->
-  <section class="container my-4">
-    <div class="row text-center gy-4">
-
-      <div class="col-md-4">
-        <h5 class="fw-bold">
-          <span class="text-danger">%</span> DE BESTE TWEEDEKANS DEALS
-        </h5>
-        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
-        <p class="small">
-          Ontdek onze tweedehands producten met hoge kortingen!
-        </p>
-      </div>
-
-      <div class="col-md-4">
-        <h5 class="fw-bold">ONTDEK DE GAMING OUTLET</h5>
-        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
-        <p class="small">
-          Scoor nu tot 50 % korting op ons assortiment in de outlet.
-        </p>
-      </div>
-
-      <div class="col-md-4">
-        <h5 class="fw-bold">
-          <span class="text-danger">%</span> RECENT TOEGEVOEGDE TWEEDEKANS PRODUCTEN
-        </h5>
-        <a class="btn btn-danger btn-sm mb-2" href="#">ONTDEK HIER</a>
-        <p class="small">
-          Bekijk hier onze recent toegevoegde tweedehands producten.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Bootstrap JS (bundel incl. Popper) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <!-- beste deals -->
 
 
-<section class="bg-dark text-white py-5">
-  <div class="container">
-    <h5 class="text-white mb-4">Contact</h5>
+  <section class="py-5">
+    <div class="container">
+      
+    <div class="row g-4">
 
-    <form class="needs-validation was-validated" novalidate>
-      <div class="row g-3">
-        <!-- Linkerkolom met velden -->
-        <div class="col-lg-8">
-          <div class="row g-3">
-            <div class="col-md-4">
-              <label for="voornaam" class="form-label">Voornaam</label>
-              <input type="text" class="form-control" id="voornaam" required>
-              <div class="valid-feedback">Voornaam ingevuld</div>
-              <div class="invalid-feedback">Vul voornaam in.</div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="achternaam" class="form-label">Achternaam</label>
-              <input type="text" class="form-control" id="achternaam" required>
-              <div class="valid-feedback">Achternaam ingevuld</div>
-              <div class="invalid-feedback">Vul achternaam in.</div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="telefoon" class="form-label">Telefoonnummer</label>
-              <input type="tel" class="form-control" id="telefoon" required>
-              <div class="valid-feedback">Telefoonnummer ingevuld</div>
-              <div class="invalid-feedback">Vul telefoonnummer in.</div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="stad" class="form-label">Stad</label>
-              <input type="text" class="form-control" id="stad" required>
-              <div class="valid-feedback">Stad ingevuld</div>
-              <div class="invalid-feedback">Vul stad in.</div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="postcode" class="form-label">Postcode</label>
-              <input type="text" class="form-control" id="postcode" required>
-              <div class="valid-feedback">Postcode ingevuld</div>
-              <div class="invalid-feedback">Vul je postcode in.</div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" required>
-              <div class="valid-feedback">E-mailadres ingevuld</div>
-              <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
-            </div>
-
-            <div class="col-12">
-              <label for="bericht" class="form-label">Uw Bericht</label>
-              <textarea class="form-control" id="bericht" rows="3" required></textarea>
-              <div class="valid-feedback">Bericht ingevoerd</div>
-              <div class="invalid-feedback">Vul uw bericht in.</div>
-            </div>
-
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="voorwaarden" required>
-                <label class="form-check-label" for="voorwaarden">
-                  Ik ga akkoord met de algemene voorwaarden
-                </label>
-                <div class="invalid-feedback">
-                  Je moet akkoord gaan met de algemene voorwaarden.
-                </div>
+        <div class="col-sm-4">
+            <div class="card h-100 text-center">
+              <img src="img/tweedekans.webp" class="card-img-top" alt="Tweedekans">
+              <div class="card-body">
+                <div class="title text-danger">De beste tweedekans deals!</div>
+                <p class="card-text"> Ontdek nu onze tweedekans producten met een hoge korting!</p>
               </div>
             </div>
+          </div>
 
-            <div class="col-12">
-              <button class="btn btn-outline-light" type="submit">Verzend formulier</button>
+          <div class="col-sm-4">
+            <div class="card h-100 text-center">
+              <img src="img/outlet.webp" class="card-img-top" alt="Outlet">
+              <div class="card-body">
+                <div class="title text-danger">Outlet</div>
+                <p class="card-text"> Scoor nu tot 50% korting op ons assortiment in de outlet.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Rechterkolom met contactinfo -->
-        <div class="col-lg-4">
-          <div class="bg-light text-dark p-3 rounded h-100">
-            <p class="mb-2">
-              <i class="bi bi-instagram"></i>
-              Stuur je bericht via Instagram. Stuur ons een privébericht via Instagram.
-            </p>
-            <p class="mb-2">
-              <i class="bi bi-chat-dots"></i>
-              Ook kunnen we je verder helpen via de chat.
-            </p>
-            <p class="mb-0">
-              <i class="bi bi-telephone"></i>
-              ma-vr: 08:00–22:00, za: 09:00–20:00, zo: 10:00–19:00
-            </p>
+
+          <div class="col-sm-4">
+            <div class="card h-100 text-center align-items-center">
+              <img src="img/recent.webp" class="card-img-top" alt="Recent tweedekans">
+              <div class="card-body">
+                <div class="title text-danger">Recent toegevoegde tweedekans producten</div>
+                <p class="card-text"> Bekijk hier onze recent toegevoegde tweedekans producten.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
-</body>
-</html>
+
+
+          <section class="bg-dark text-white py-5">
+            <div class="container">
+              <h5 class="text-white mb-4">Contact</h5>
+          
+              <form class="needs-validation was-validated" novalidate>
+                <div class="row g-3">
+                  <!-- Linkerkolom met velden -->
+                  <div class="col-lg-8">
+                    <div class="row g-3">
+                      <div class="col-md-4">
+                        <label for="voornaam" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="voornaam" required>
+                        <div class="valid-feedback">Voornaam ingevuld</div>
+                        <div class="invalid-feedback">Vul voornaam in.</div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="achternaam" class="form-label">Achternaam</label>
+                        <input type="text" class="form-control" id="achternaam" required>
+                        <div class="valid-feedback">Achternaam ingevuld</div>
+                        <div class="invalid-feedback">Vul achternaam in.</div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="telefoon" class="form-label">Telefoonnummer</label>
+                        <input type="tel" class="form-control" id="telefoon" required>
+                        <div class="valid-feedback">Telefoonnummer ingevuld</div>
+                        <div class="invalid-feedback">Vul telefoonnummer in.</div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="stad" class="form-label">Stad</label>
+                        <input type="text" class="form-control" id="stad" required>
+                        <div class="valid-feedback">Stad ingevuld</div>
+                        <div class="invalid-feedback">Vul stad in.</div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="postcode" class="form-label">Postcode</label>
+                        <input type="text" class="form-control" id="postcode" required>
+                        <div class="valid-feedback">Postcode ingevuld</div>
+                        <div class="invalid-feedback">Vul je postcode in.</div>
+                      </div>
+          
+                      <div class="col-md-4">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="valid-feedback">E-mailadres ingevuld</div>
+                        <div class="invalid-feedback">Vul een geldig e-mailadres in.</div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="bericht" class="form-label">Uw Bericht</label>
+                        <textarea class="form-control" id="bericht" rows="3" required></textarea>
+                        <div class="valid-feedback">Bericht ingevoerd</div>
+                        <div class="invalid-feedback">Vul uw bericht in.</div>
+                      </div>
+          
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="voorwaarden" required>
+                          <label class="form-check-label" for="voorwaarden">
+                            Ik ga akkoord met de algemene voorwaarden
+                          </label>
+                          <div class="invalid-feedback">
+                            Je moet akkoord gaan met de algemene voorwaarden.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <button class="btn btn-outline-light" type="submit">Verzend formulier</button>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Rechterkolom met contactinfo -->
+                  <div class="col-lg-4">
+                    <div class="bg-light text-dark p-3 rounded h-100">
+                      <p class="mb-2">
+                        <i class="bi bi-instagram"></i>
+                        Stuur je bericht via Instagram. Stuur ons een privébericht via Instagram.
+                      </p>
+                      <p class="mb-2">
+                        <i class="bi bi-chat-dots"></i>
+                        Ook kunnen we je verder helpen via de chat.
+                      </p>
+                      <p class="mb-0">
+                        <i class="bi bi-telephone"></i>
+                        ma-vr: 08:00–22:00, za: 09:00–20:00, zo: 10:00–19:00
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
