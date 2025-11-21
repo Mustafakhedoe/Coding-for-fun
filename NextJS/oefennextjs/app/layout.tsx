@@ -27,7 +27,11 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Link href='' className='p-4 bg-emerald-700'></Link>
+        <div className="p-4 bg-emerald-700 flex gap-4">
+        <Link href='/about' className=''>About Me</Link>
+        <Link href='/contact' className=''>Contact</Link>
+        </div>
+
         <main id="main-content" className="flex-1">
           {children}
         </main>

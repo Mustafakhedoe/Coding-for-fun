@@ -2,7 +2,7 @@
 import Link from 'next/link'
  
 
-export default function routingpage() {
+export default function contactPage() {
   return (
         <div>
             
