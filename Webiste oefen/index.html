@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="nl" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Club Aurora — Voetbal</title>
+ <!-- Inter font -->
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+ <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-100 font-sans">
+
+    <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/60 dark:border-slate-700/60 bg-white/70 dark:bg-slate-900/70 glass">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#" class="group inline-flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-aurora-500 text-white font-extrabold shadow-sm group-hover:-rotate-6 transition">A</span>
+        <span class="text-lg font-extrabold tracking-tight">Club <span class="text-aurora-600 dark:text-aurora-400">Aurora</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#wedstrijden" class="hover:text-aurora-600">Wedstrijden</a>
+        <a href="#spelers" class="hover:text-aurora-600">Spelers</a>
+        <a href="#stats" class="hover:text-aurora-600">Statistieken</a>
+        <a href="#nieuwsbrief" class="hover:text-aurora-600">Nieuwsbrief</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="inline-flex items-center gap-2 rounded-full border border-slate-300/70 dark:border-slate-700 px-3 py-1.5 text-xs hover:border-aurora-500 hover:text-aurora-600 dark:hover:text-aurora-300 transition">
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 block dark:hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM12 1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1Zm0 19a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1ZM2 11h2a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2Zm18 0h2a1 1 0 1 1 0 2h-2a1 1 0 0 1 0-2ZM4.22 4.22a1 1 0 0 1 1.42 0L7 5.59a1 1 0 1 1-1.41 1.41L4.22 5.64a1 1 0 0 1 0-1.42Zm11.31 11.31a1 1 0 0 1 1.41 0l1.37 1.37a1 1 0 1 1-1.41 1.41L15.53 16.94a1 1 0 0 1 0-1.41ZM18.36 4.22a1 1 0 0 1 0 1.42L17 7.01A1 1 0 1 1 15.59 5.6l1.37-1.37a1 1 0 0 1 1.41 0ZM6.47 16.94a1 1 0 0 1 0 1.41L5.1 19.72a1 1 0 1 1-1.41-1.41l1.37-1.37a1 1 0 0 1 1.41 0Z"/></svg>
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hidden dark:block" viewBox="0 0 24 24" fill="currentColor"><path d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.11 1.46A7 7 0 1 0 20.18 12a1 1 0 0 1 1.46 1Z"/></svg>
+          <span class="hidden sm:inline">Thema</span>
+        </button>
+        <a href="#tickets" class="hidden sm:inline-flex items-center rounded-full bg-aurora-500 text-white px-4 py-2 text-sm font-semibold shadow-soft hover:translate-y-[-1px] active:translate-y-[0] transition">Tickets</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2000&auto=format&fit=crop" alt="" class="h-[70vh] w-full object-cover brightness-90 dark:brightness-[.65]">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-white/0 dark:from-black/60 dark:via-black/40"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24 pb-16 sm:pb-24">
+      <div class="max-w-3xl text-white">
+        <p class="inline-block rounded-full bg-white/15 px-3 py-1 text-xs tracking-wide ring-1 ring-white/25 mb-4">Seizoen 2025 • Eredivisie</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Samen achter <span class="text-aurora-300">groen-wit</span>. <br>Voel de magie van Club Aurora.</h1>
+        <p class="mt-4 text-white/90 max-w-2xl">Van jeugd tot eerste elftal: techniek, lef en passie. Haal je tickets, check de fixtures en ontmoet je favoriete spelers.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#wedstrijden" class="rounded-full bg-aurora-500 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">Komende wedstrijden</a>
+          <a href="#spelers" class="rounded-full bg-white/15 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/25 hover:bg-white/20">Selectie bekijken</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDSTRIJDEN -->
+  <section id="wedstrijden" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex items-end justify-between gap-4 mb-6">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Komende wedstrijden</h2>
+      <a id="tickets" href="#" class="text-sm text-aurora-700 dark:text-aurora-300 hover:underline">Ticketinfo →</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- kaart 1 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-soft bg-white dark:bg-slate-900">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold tracking-wide text-slate-500 dark:text-slate-400">Zat 18 okt • 20:00</span>
+          <span class="text-xs rounded-full bg-aurora-50 dark:bg-aurora-900/30 text-aurora-700 dark:text-aurora-300 px-2 py-1">Thuis</span>
+        </div>
+        <div class="mt-4 grid grid-cols-3 items-center">
+          <div class="text-right">
+            <p class="font-semibold">Aurora</p>
+            <p class="text-xs text-slate-500">Eredivisie</p>
+          </div>
+          <div class="text-center text-3xl font-extrabold">vs</div>
+          <div>
+            <p class="font-semibold">Riverton FC</p>
+            <p class="text-xs text-slate-500">Eredivisie</p>
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <div class="text-sm text-slate-600 dark:text-slate-300">Stadion Aurora</div>
+          <button class="rounded-full bg-aurora-500 text-white px-4 py-2 text-sm font-semibold hover:opacity-95">Koop Tickets</button>
+        </div>
+      </article>
+
+      <!-- kaart 2 -->
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-soft bg-white dark:bg-slate-900">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold tracking-wide text-slate-500 dark:text-slate-400">Zon 26 okt • 16:45</span>
+          <span class="text-xs rounded-full bg-yellow-50 dark:bg-yellow-400/10 text-yellow-700 dark:text-yellow-300 px-2 py-1">Uit</span>
+        </div>
+        <div class="mt-4 grid grid-cols-3 items-center">
+          <div class="text-right">
+            <p class="font-semibold">Northport</p>
+            <p class="text-xs text-slate-500">Beker</p>
+          </div>
+          <div class="text-center text-3xl font-extrabold">vs</div>
+          <div>
+            <p class="font-semibold">Aurora</p>
+            <p class="text-xs text-slate-500">Beker</p>
+          </div>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <div class="text-sm text-slate-600 dark:text-slate-300">Stadion Northport</div>
+          <button class="rounded-full border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-semibold hover:border-aurora-500 hover:text-aurora-600 dark:hover:text-aurora-300">Meer info</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SPELERS -->
+  <section id="spelers" class="bg-slate-50 dark:bg-slate-800/30 py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4 mb-8">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Selectie — Topspelers</h2>
+        <a href="#" class="text-sm text-aurora-700 dark:text-aurora-300 hover:underline">Alle spelers →</a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- speler 1 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-soft">
+          <img src="https://images.bd.nl/Nzg4OGFmMDk3OWU4OWQyNzNhYzgvZGlvLzIzODg4MTE4OC9maXQtd2lkdGgvMTIwMA/het-is-officieel-youssuf-sylla-22-is-de-nieuwe-spits-van-willem-ii" alt="" class="h-44 w-full object-cover">
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <h3 class="font-extrabold text-lg">#9  Jayden Storm</h3>
+              <span class="text-xs rounded-full bg-aurora-50 dark:bg-aurora-900/30 text-aurora-700 dark:text-aurora-300 px-2 py-1">Spits</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Explosief in de diepte, klinische afmaker.</p>
+            <div class="mt-4 grid grid-cols-3 text-center text-xs">
+              <div><p class="font-bold text-base">12</p><p class="text-slate-500">Doelpunten</p></div>
+              <div><p class="font-bold text-base">4</p><p class="text-slate-500">Assists</p></div>
+              <div><p class="font-bold text-base">88%</p><p class="text-slate-500">Pasnauwk.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- speler 2 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-soft">
+          <img src="https://cdn.dtvnieuws.nl/w_1920/481n61g0nyb3-luca-11.jpg" alt="" class="h-44 w-full object-cover">
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <h3 class="font-extrabold text-lg">#7  Luca Veld</h3>
+              <span class="text-xs rounded-full bg-aurora-50 dark:bg-aurora-900/30 text-aurora-700 dark:text-aurora-300 px-2 py-1">Flank</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Snel, technisch, gevaarlijk 1-tegen-1.</p>
+            <div class="mt-4 grid grid-cols-3 text-center text-xs">
+              <div><p class="font-bold text-base">7</p><p class="text-slate-500">Goals</p></div>
+              <div><p class="font-bold text-base">9</p><p class="text-slate-500">Assists</p></div>
+              <div><p class="font-bold text-base">26</p><p class="text-slate-500">Key passes</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- speler 3 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-soft">
+          <img src="https://images.nu.nl/m/jnzxzbxafbc2_wd1280/0/97/5138/2891/ajax-bevestigt-eerste-zomertransfer-en-huurt-keeper-vitezslav-jaros-van-liverpool.jpg" alt="" class="h-44 w-full object-cover">
+          <div class="p-5">
+            <div class="flex items-center justify-between">
+              <h3 class="font-extrabold text-lg">#1  Noor Ates</h3>
+              <span class="text-xs rounded-full bg-aurora-50 dark:bg-aurora-900/30 text-aurora-700 dark:text-aurora-300 px-2 py-1">Keeper</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Kattenreflexen en ijzersterke opbouw.</p>
+            <div class="mt-4 grid grid-cols-3 text-center text-xs">
+              <div><p class="font-bold text-base">8</p><p class="text-slate-500">Clean sheets</p></div>
+              <div><p class="font-bold text-base">78%</p><p class="text-slate-500">Saves</p></div>
+              <div><p class="font-bold text-base">5</p><p class="text-slate-500">Sweeps</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIEKEN -->
+  <section id="stats" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid lg:grid-cols-5 gap-6 items-stretch">
+      <div class="lg:col-span-2 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <h3 class="text-xl font-extrabold">Teamvorm</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-300 mt-1">Laatste 5</p>
+        <div class="mt-4 flex gap-2">
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-aurora-100 text-aurora-800 dark:bg-aurora-900/30 dark:text-aurora-200">W</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-aurora-100 text-aurora-800 dark:bg-aurora-900/30 dark:text-aurora-200">W</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200">G</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200">V</span>
+          <span class="px-3 py-1 rounded-full text-xs font-semibold bg-aurora-100 text-aurora-800 dark:bg-aurora-900/30 dark:text-aurora-200">W</span>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div class="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-4">
+            <p class="text-2xl font-extrabold">29</p>
+            <p class="text-xs text-slate-500">GF</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-4">
+            <p class="text-2xl font-extrabold">14</p>
+            <p class="text-xs text-slate-500">GA</p>
+          </div>
+          <div class="rounded-xl bg-slate-50 dark:bg-slate-800/50 p-4">
+            <p class="text-2xl font-extrabold">+15</p>
+            <p class="text-xs text-slate-500">GD</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white dark:bg-slate-900 shadow-soft">
+        <h3 class="text-xl font-extrabold">Stand — Top 6</h3>
+        <div class="mt-4 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead class="text-left text-slate-500">
+              <tr>
+                <th class="py-2 pr-4">#</th>
+                <th class="py-2 pr-4">Team</th>
+                <th class="py-2 pr-4">GS</th>
+                <th class="py-2 pr-4">W</th>
+                <th class="py-2 pr-4">G</th>
+                <th class="py-2 pr-4">V</th>
+                <th class="py-2 pr-4">Pnt</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">1</td><td class="py-2 pr-4">Aurora</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">9</td><td class="py-2 pr-4">2</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4 font-bold">29</td>
+              </tr>
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">2</td><td class="py-2 pr-4">Riverton</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">8</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4">3</td><td class="py-2 pr-4 font-bold">25</td>
+              </tr>
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">3</td><td class="py-2 pr-4">Delta City</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">7</td><td class="py-2 pr-4">3</td><td class="py-2 pr-4">2</td><td class="py-2 pr-4 font-bold">24</td>
+              </tr>
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">4</td><td class="py-2 pr-4">Noordhaven</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">6</td><td class="py-2 pr-4">3</td><td class="py-2 pr-4">3</td><td class="py-2 pr-4 font-bold">21</td>
+              </tr>
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">5</td><td class="py-2 pr-4">Seaside</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">6</td><td class="py-2 pr-4">1</td><td class="py-2 pr-4">5</td><td class="py-2 pr-4 font-bold">19</td>
+              </tr>
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">
+                <td class="py-2 pr-4 font-semibold">6</td><td class="py-2 pr-4">Westpoort</td><td class="py-2 pr-4">12</td><td class="py-2 pr-4">5</td><td class="py-2 pr-4">3</td><td class="py-2 pr-4">4</td><td class="py-2 pr-4 font-bold">18</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NIEUWSBRIEF -->
+  <section id="nieuwsbrief" class="relative">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=2000&auto=format&fit=crop" class="h-[380px] w-full object-cover brightness-90 dark:brightness-[.6]" alt="">
+      <div class="absolute inset-0 bg-aurora-500/10 dark:bg-aurora-900/40 mix-blend-multiply"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="max-w-2xl rounded-2xl glass p-8 ring-1 ring-white/20 dark:ring-slate-700/40 shadow-soft">
+        <h3 class="text-2xl font-extrabold">Blijf op de hoogte</h3>
+        <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">Scores, highlights en ticketdeals in je inbox.</p>
+        <form class="mt-6 flex flex-col sm:flex-row gap-3">
+          <input type="email" placeholder="jouw@email.nl" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/70 px-4 py-3 text-sm outline-none focus:ring-4 focus:ring-aurora-500/20">
+          <button type="button" class="shrink-0 rounded-xl bg-aurora-500 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:opacity-95">Aanmelden</button>
+        </form>
+        <p class="mt-2 text-xs text-slate-500">Je kunt je altijd uitschrijven. We spammen niet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 mt-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+      <div>
+        <p class="font-extrabold text-lg">Club <span class="text-aurora-600 dark:text-aurora-400">Aurora</span></p>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Passie. Opleiding. Prestatie.</p>
+      </div>
+      <div>
+        <p class="font-semibold">Club</p>
+        <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
+          <li><a href="#" class="hover:underline">Historie</a></li>
+          <li><a href="#" class="hover:underline">Jeugdacademie</a></li>
+          <li><a href="#" class="hover:underline">Maatschappij</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Fan zone</p>
+        <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
+          <li><a href="#" class="hover:underline">Merchandise</a></li>
+          <li><a href="#" class="hover:underline">Seizoenskaarten</a></li>
+          <li><a href="#" class="hover:underline">Stadiontour</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Contact</p>
+        <ul class="mt-2 space-y-1 text-slate-600 dark:text-slate-300">
+          <li>info@clubaurora.nl</li>
+          <li>+31 (0)20 123 4567</li>
+          <li>Stadionlaan 14, Aurora</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-xs text-slate-500 py-6">© 2025 Club Aurora. Alle rechten voorbehouden.</div>
+  </footer>
+  <script src="main.js"></script>
+  </body>
+  </html>

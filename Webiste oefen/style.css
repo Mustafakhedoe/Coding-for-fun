@@ -1,0 +1,5 @@
+html { scroll-behavior: smooth; }
+
+ /* kleine helper voor glass effect */
+ .glass { backdrop-filter: saturate(160%) blur(10px); background: rgba(255,255,255,.7); }
+ .dark .glass { background: rgba(17,24,39,.6); }
